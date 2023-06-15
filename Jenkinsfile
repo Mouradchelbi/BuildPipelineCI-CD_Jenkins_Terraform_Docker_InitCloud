@@ -80,11 +80,11 @@ pipeline {
      stage('Pre_Building_Prod_Environment') {
 
        steps {
-        Build 'ProdEnvironment_Pipeline'
+        build job: 'ProdEnvironment_Pipeline', waitForStart: true
               }
        stage('Post_Building_Prod_Environment')
        steps{
-        echo 'Deployment Accomplished'
+        echo 'Successful Deployment'
              }
 
      }
