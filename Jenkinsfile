@@ -15,7 +15,7 @@ pipeline {
             }
     stage('Build') {
         steps{
-            sh 'cd pythonApp  && sudo docker build -t mouchel/app .'
+            sh 'cd pythonApp  && docker build -t mouchel/app .'
             echo 'Build Image Completed' 
              }
            }
