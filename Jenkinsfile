@@ -26,10 +26,7 @@ pipeline {
      sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
      echo 'Login Completed' 
      }
-     }
-    
-	                          
-                                 
+     }                                                      
     stage('Push Image to Docker Hub') {         
      steps{                            
         sh 'docker push mouchel/app'         
@@ -73,10 +70,8 @@ pipeline {
             }
             }
             }
-            }
-        
-                                        
-    
+            }     
+                                      
      stage('Pre_Building_Prod_Environment') {
 
        steps {
