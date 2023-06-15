@@ -9,6 +9,18 @@ resource "azurerm_network_security_group" "allowedports" {
    resource_group_name = azurerm_resource_group.webserver.name
    location = azurerm_resource_group.webserver.location
   
+
+  security_rule {
+       name = "http"
+       priority = 310
+       direction = "Inbound"
+       access = "Allow"
+       protocol = "Tcp"
+       source_port_range = "5000"
+       destination_port_range = "1234"
+       source_address_prefix = "*"
+       destination_address_prefix = "*"
+   }
    security_rule {
        name = "http"
        priority = 100

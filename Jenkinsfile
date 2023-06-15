@@ -56,7 +56,7 @@ pipeline {
     stage('Terraform init') {
       steps {
         script {
-          dir('ProdEnvironment/') {
+          dir('stagingEnvironment/') {
             sh 'terraform init -upgrade '
                 }
                         
@@ -68,14 +68,31 @@ pipeline {
     stage('Terraform Apply') {
       steps {
         script {
-          dir('ProdEnvironment/') {
+          dir('stagingEnvironment/') {
             sh 'terraform apply  -auto-approve'
                                }
                }
                    }
         }
-                                         
+        
+                                        
     
-     
+     stage('Pre_Building_Prod_Environment') {
+
+       steps {
+        Build 'ProdEnvironment_Pipeline'
+              }
+       stage('Post_Building_Prod_Environment')
+       steps{
+        echo 'Deployment Accomplished'
+             }
+
+     }
+       
+
+
+
+
+
                             }  //stages 
      }//pipeline
