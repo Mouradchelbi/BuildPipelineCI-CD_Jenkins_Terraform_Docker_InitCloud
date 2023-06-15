@@ -2,12 +2,9 @@ pipeline {
      agent any
       
   environment {     
-    DOCKERHUB_CREDENTIALS= credentials('dockerhubcredentials')     
-              }   
-
-  environment {     
+    DOCKERHUB_CREDENTIALS= credentials('dockerhubcredentials')  
     MY_CRED = credentials('Azureserviceprincipal')     
-              }  
+              }   
    
     stages    { 
 
