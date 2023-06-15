@@ -70,10 +70,9 @@ pipeline {
         script {
           dir('ProdEnvironment/') {
             sh 'terraform apply  -auto-approve'
-        }
-        
-        }
-        }
+                               }
+               }
+                   }
         }
                                          
     

@@ -1,10 +1,7 @@
 #!/bin/bash
-
+sudo apt update -y && sudo apt upgrade -y
 #Installing Docker
-curl -fsSL https://get.docker.com -o install-docker.sh
-sudo sh install-docker.sh
-
-
+sudo apt install docker.io
 #Creating container
 sudo docker run -d -p 5005:1234 --name chroApp mouchel/app:latest
 
