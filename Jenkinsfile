@@ -4,42 +4,42 @@ pipeline {
   environment {     
     DOCKERHUB_CREDENTIALS= credentials('dockerhubcredentials')  
     MY_CRED = credentials('Azureserviceprincipal')     
-              }   
+    }   
    
     stages    { 
 
     stage('check out the git') { 
         steps  {
              checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud']])
-               }
-            }
+     }
+     }
     stage('Build') {
         steps{
             sh 'cd pythonApp  && docker build -t mouchel/app .'
             echo 'Build Image Completed' 
-             }
-           }
+    }
+    }
    	
     stage('Login') {
 
-			steps {
-				sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-        echo 'Login Completed' 
-			      }
-		      }
-                    		
+     steps {
+     sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+     echo 'Login Completed' 
+     }
+     }
+    
 	                          
-                                    
+                                 
     stage('Push Image to Docker Hub') {         
      steps{                            
         sh 'docker push mouchel/app'         
         echo 'Push Image Completed'       
-          }  
+     }  
      }       
   
     stage('AZ conection') {
-            steps {
-               sh 'az login --service-principal -u $MY_CRED_CLIENT_ID -p $MY_CRED_CLIENT_SECRET -t $MY_CRED_TENANT_ID'
+    steps {
+    sh 'az login --service-principal -u $MY_CRED_CLIENT_ID -p $MY_CRED_CLIENT_SECRET -t $MY_CRED_TENANT_ID'
       }
     }
     
@@ -59,7 +59,7 @@ pipeline {
           dir('stagingEnvironment/') {
             sh 'terraform init -upgrade '
                 }
-                        
+                       
                  }
                  }
                  }
@@ -70,10 +70,10 @@ pipeline {
         script {
           dir('stagingEnvironment/') {
             sh 'terraform apply  -auto-approve'
-                               }
-               }
-                   }
-        }
+            }
+            }
+            }
+            }
         
                                         
     
@@ -86,13 +86,7 @@ pipeline {
        steps{
         echo 'Successful Deployment'
              }
-
-     }
-       
-
-
-
-
-
-                            }  //stages 
-     }//pipeline
+    }
+    
+  }  //stages 
+    }//pipeline
