@@ -1,5 +1,7 @@
 # BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud
-     In this LAB we are going to :
+
+
+In this LAB we are going to :
 1- To Build an image and pushed to DockerHub
 2- To Deploy an infra on staging enviroment using Terraform 
 3- To configure Jenkins downstream projects pipeline to depoly the Prod enviroment 
