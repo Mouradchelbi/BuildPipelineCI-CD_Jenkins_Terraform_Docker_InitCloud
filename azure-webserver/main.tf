@@ -8,7 +8,7 @@ resource "azurerm_network_security_group" "allowedports" {
    name = "allowedports"
    resource_group_name = azurerm_resource_group.webserver.name
    location = azurerm_resource_group.webserver.location
-  
+}
 
    security_rule {
        name = "http"
