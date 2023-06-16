@@ -17,11 +17,12 @@ Pre-installation
      2- Azure Credential 
      3- Terraform Plugin 
 4- Instalation of Terraform on Jenkins's machine and revoke the path on the plugin 
+                                   azureuser:~$   which terraform 
      
-     ![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/7ea92582-5b71-4e5e-8406-460524ac591e)
+![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/7ea92582-5b71-4e5e-8406-460524ac591e)
 
      
-     ![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/c7839b72-b100-4021-ae97-8dff6ad37881)
+![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/c7839b72-b100-4021-ae97-8dff6ad37881)
 
 
 Jenkins is one of the most popular tools for build automation and it’s pipeline plugin allows us to define the job-configuration as part of our source code. Migrating from manual configuration to the groovy syntax of the pipeline plugin can be very challenging, but it’s definitely worth it. Tracking of changes, dynamic behavior, and complex configurations are just a few areas where the pipeline syntax of Jenkins thrives.
