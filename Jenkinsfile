@@ -78,7 +78,9 @@ pipeline {
         echo 'Successful Deployment'
               }          
              }
-    }
-  
-  }  //stages 
-    }//pipeline
+    
+
+     }  //stages 
+
+  }//pipeline
+    
