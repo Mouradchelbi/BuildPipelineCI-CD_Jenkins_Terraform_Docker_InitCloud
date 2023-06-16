@@ -20,6 +20,9 @@ Pre-installation
 
 
                                    azureuser:~$   which terraform 
+                                   
+                                   azureuser:~$   /usr/local/bin/terraform
+
      
 ![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/7ea92582-5b71-4e5e-8406-460524ac591e)
 
