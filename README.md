@@ -48,8 +48,10 @@ Jenkins is one of the most popular tools for build automation and it’s pipelin
 
 Creation of Jobs - Pipelines: 
 
-Upstream   pipeline ->>> stagingEnvironment 
-Downstream pipeline ->>> ProdEnvironment
+Upstream   pipeline ->>> stagingEnvironment.
+
+Downstream pipeline ->>> ProdEnvironment.
+
 ![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/765c1633-37ae-4a0a-bbb7-12cc71188a54)
 
 
