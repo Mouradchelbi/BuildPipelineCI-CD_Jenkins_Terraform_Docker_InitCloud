@@ -58,7 +58,7 @@ resource "azurerm_network_security_group" "allowedports" {
        source_address_prefix = "*"
        destination_address_prefix = "*"
    }
-}
+            }
 
 resource "azurerm_subnet_network_security_group_association" "mgmt-nsg-association" {
     subnet_id                 = azurerm_subnet.webserver-subnet.id
