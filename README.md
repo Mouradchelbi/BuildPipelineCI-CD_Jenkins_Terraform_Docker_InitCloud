@@ -24,5 +24,10 @@ how to create a job that internally triggers another job in Jenkins. As a first 
 
 
 
+Deployment Check 
+![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/b04875f7-4d13-4155-9510-3c657eb77407)
+
+
+
 
 
