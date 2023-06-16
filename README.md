@@ -8,14 +8,18 @@ In this LAB we are going to :
 
 ALL above orchireted by Jenkins!!!
 
-Pre-set 
+Pre-installation 
 
 1- Instalation of Jenkins and configuration https://www.jenkins.io/doc/book/installing/linux/
 2- Instalation of latest Python version 
 3- Adding the following Plugins: 
-     1- Azure 
+     1- Azure CLI Plugin
+     2- Azure Credential 
+     3- Terraform Plugin 
+4- Instalation of Terraform on Jenkins's machine and revoke the path on the plugin 
      
-     
+     ![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/7ea92582-5b71-4e5e-8406-460524ac591e)
+
      
      ![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/c7839b72-b100-4021-ae97-8dff6ad37881)
 
