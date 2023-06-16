@@ -28,9 +28,21 @@ Pre-installation
 ![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/7ea92582-5b71-4e5e-8406-460524ac591e)
 
      
-  5- Seeting up Docker hub credential in Jenkins 
+  5- Setting up Docker hub credential in Jenkins 
   
 https://www.jenkins.io/doc/book/using/using-credentials/
+
+  6- Setting up Azure service principal 
+ 
+ https://plugins.jenkins.io/azure-credentials/
+
+
+7- 
+![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/48c32ebc-2a44-4b22-af87-6b51b4e9d5b2)
+
+
+
+
 
 Jenkins is one of the most popular tools for build automation and it’s pipeline plugin allows us to define the job-configuration as part of our source code. Migrating from manual configuration to the groovy syntax of the pipeline plugin can be very challenging, but it’s definitely worth it. Tracking of changes, dynamic behavior, and complex configurations are just a few areas where the pipeline syntax of Jenkins thrives.
 
