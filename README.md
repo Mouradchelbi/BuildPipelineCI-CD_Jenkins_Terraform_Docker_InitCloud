@@ -13,9 +13,11 @@ Pre-installation
 1- Instalation of Jenkins and configuration https://www.jenkins.io/doc/book/installing/linux/
 2- Instalation of latest Python version 
 3- Adding the following Plugins: 
+
      1- Azure CLI Plugin
      2- Azure Credential 
      3- Terraform Plugin 
+     
 4- Instalation of Terraform on Jenkins's machine and revoke the path on the plugin.
 
 
@@ -75,7 +77,7 @@ Deployment Check
 ![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/b04875f7-4d13-4155-9510-3c657eb77407)
 
 
-I hope this Lab help to progress on your Devops learning journey!!!
+I hope this Lab help you to progress in your Devops learning journey!!!
 
 
 
