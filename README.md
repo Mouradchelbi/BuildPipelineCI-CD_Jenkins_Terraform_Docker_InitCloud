@@ -64,6 +64,8 @@ Triggers follow the same logic as the “build after other projects are built”
 
 how to create a job that internally triggers another job in Jenkins. As a first step, we created a sample freestyle Jenkins job and then created a pipeline job to internally trigger 
 
+![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/e544e1c6-a20e-4fb2-9f5a-609284bbd51d)
+
 
 ![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/fa7732bf-08d9-486b-b9bc-bf1c8d557156)
 
