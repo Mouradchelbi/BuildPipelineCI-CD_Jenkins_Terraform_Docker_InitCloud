@@ -73,15 +73,12 @@ pipeline {
             }     
                                       
      stage('Pre_Building_Prod_Environment') {
-
        steps {
         build job: 'ProdEnvironment_Pipeline', waitForStart: true
-              }
-       stage('Post_Building_Prod_Environment')
-       steps{
         echo 'Successful Deployment'
+              }          
              }
     }
-    
+  
   }  //stages 
     }//pipeline
