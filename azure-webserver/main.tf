@@ -8,7 +8,7 @@ resource "azurerm_network_security_group" "allowedports" {
    name = "allowedports"
    resource_group_name = azurerm_resource_group.webserver.name
    location = azurerm_resource_group.webserver.location
-}
+ 
 
    security_rule {
        name = "http"
@@ -58,6 +58,7 @@ resource "azurerm_network_security_group" "allowedports" {
        source_address_prefix = "*"
        destination_address_prefix = "*"
    }
+}
             
 
 resource "azurerm_subnet_network_security_group_association" "mgmt-nsg-association" {
