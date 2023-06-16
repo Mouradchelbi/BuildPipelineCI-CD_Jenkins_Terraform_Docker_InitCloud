@@ -78,6 +78,13 @@ Deployment Check
 
 ![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/633bf643-3e11-46c7-8ba7-383ae6ad6fe0)
 
+InitCloud provisioning check
+ini-script 
+![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/923fc1fb-4c82-4379-90df-e14192f654cf)
+
+![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/76e5df8a-1186-4be0-9d64-f09f0cbc76d1)
+
+
 I hope this Lab help you to progress in your Devops learning journey!!!
 
 
