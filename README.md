@@ -46,6 +46,14 @@ https://www.jenkins.io/doc/book/using/using-credentials/
 
 Jenkins is one of the most popular tools for build automation and it’s pipeline plugin allows us to define the job-configuration as part of our source code. Migrating from manual configuration to the groovy syntax of the pipeline plugin can be very challenging, but it’s definitely worth it. Tracking of changes, dynamic behavior, and complex configurations are just a few areas where the pipeline syntax of Jenkins thrives.
 
+Creation of Jobs - Pipelines: 
+
+Upstream   pipeline ->>> stagingEnvironment 
+Downstream pipeline ->>> ProdEnvironment
+![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/765c1633-37ae-4a0a-bbb7-12cc71188a54)
+
+
+
 Jenkins downstream projects pipeline 
 Triggered execution
 Triggers follow the same logic as the “build after other projects are built” option in the configuration of Jenkins projects.
