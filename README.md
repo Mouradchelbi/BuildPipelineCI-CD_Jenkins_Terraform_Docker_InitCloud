@@ -8,6 +8,17 @@ In this LAB we are going to :
 
 ALL above orchireted by Jenkins!!!
 
+Pre-set 
+
+1- Instalation of Jenkins and configuration https://www.jenkins.io/doc/book/installing/linux/
+2- Instalation of latest Python version 
+3- Adding the following Plugins: 
+     1- Azure 
+     
+     
+     
+     ![image](https://github.com/Mouradchelbi/BuildPipelineCI-CD_Jenkins_Terraform_Docker_InitCloud/assets/72913289/c7839b72-b100-4021-ae97-8dff6ad37881)
+
 
 Jenkins is one of the most popular tools for build automation and it’s pipeline plugin allows us to define the job-configuration as part of our source code. Migrating from manual configuration to the groovy syntax of the pipeline plugin can be very challenging, but it’s definitely worth it. Tracking of changes, dynamic behavior, and complex configurations are just a few areas where the pipeline syntax of Jenkins thrives.
 
