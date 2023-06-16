@@ -35,7 +35,8 @@ Pre-installation
 https://www.jenkins.io/doc/book/using/using-credentials/
 
   6- Setting up Azure service principal 
- 
+                         az ad sp create-for-rbac --name azure-cli-vincent --role="Contributor" --scopes "/subscriptions/xxxxxxx-xxxxxx-xxxx-xxxx-xxxxxxxxxxxx"
+                                
  https://plugins.jenkins.io/azure-credentials/
 
 
