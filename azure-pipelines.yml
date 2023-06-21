@@ -27,3 +27,12 @@ stages:
        command: 'buildAndPush'
        Dockerfile: '**/Dockerfile'
           
+    - task: TerraformTaskV4@4
+      inputs:
+        provider: 'azurerm'
+        command: 'init'
+        backendServiceArm: 'Terraformsrvconnection'
+        backendAzureRmResourceGroupName: 'cmdockerlab'
+        backendAzureRmStorageAccountName: 'cmdevopsstrorage'
+        backendAzureRmContainerName: 'cmdevopsblob'
+        backendAzureRmKey: 'Cn3WGSZFEX4kuGFoxUG00adHGkHF7zpwKe0kOY0HCqzu6u6zFt5UzA9NWbl59p8B8vBzC3+clHH2+AStPl+9hg=='
