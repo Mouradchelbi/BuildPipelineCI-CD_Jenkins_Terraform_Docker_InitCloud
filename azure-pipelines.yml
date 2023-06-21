@@ -40,6 +40,10 @@ stages:
     - task: TerraformTaskV4@4
       inputs:
         provider: 'azurerm'
-        command: 'apply'
-        commandOptions: 'tfplan -auto-approve'
-        environmentServiceNameAzureRM: 'Simplon ARA Lyon Admin Cloud P22(393e3de3-0900-4b72-8f1b-fb3b1d6b97f1)'
+        command: 'init'
+        workingDirectory: '''$(System.DefaultWorkingDirectory)\terraform\terra'''
+        backendServiceArm: 'Simplon ARA Lyon Admin Cloud P22(393e3de3-0900-4b72-8f1b-fb3b1d6b97f1)'
+        backendAzureRmResourceGroupName: 'cmdockerlab'
+        backendAzureRmStorageAccountName: 'cmdevopsstrorage'
+        backendAzureRmContainerName: 'cmdevopsblob'
+        backendAzureRmKey: 'Cn3WGSZFEX4kuGFoxUG00adHGkHF7zpwKe0kOY0HCqzu6u6zFt5UzA9NWbl59p8B8vBzC3+clHH2+AStPl+9hg=='
